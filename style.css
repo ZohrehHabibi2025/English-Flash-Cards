@@ -58,4 +58,3 @@ body {
 .card.flipped .back {
   transform: rotateY(0deg);
 }
-
