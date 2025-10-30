@@ -44,7 +44,7 @@ body {
 .back {
   background-color: #4a90e2;
   color: white;
-  font-size: 1.2em;
+  font-size: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,3 +58,4 @@ body {
 .card.flipped .back {
   transform: rotateY(0deg);
 }
+
