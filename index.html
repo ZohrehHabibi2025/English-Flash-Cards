@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<title>English Flash cards</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/face.png" alt="face">
+            </div>
+            <div class="back">face</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/eye.png" alt="eye">
+            </div>
+            <div class="back">eye</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/mouth.png" alt="mouth">
+            </div>
+            <div class="back">mouth</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/nose.png" alt="nose">
+            </div>
+            <div class="back">nose</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/ear.png" alt="ear">
+            </div>
+            <div class="back">ear</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/head.png" alt="head">
+            </div>
+            <div class="back">head</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/hair.png" alt="hair">
+            </div>
+            <div class="back">hair</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/leg.png" alt="leg">
+            </div>
+            <div class="back">leg</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/arm.png" alt="arm">
+            </div>
+            <div class="back">arm</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/hand.png" alt="hand">
+            </div>
+            <div class="back">hand</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/feet.png" alt="feet">
+            </div>
+            <div class="back">feet</div>
+        </div>
+
+        <div class="card" id="card">
+            <div class="front">
+                <img src="./assets/images/foot.png" alt="foot">
+            </div>
+            <div class="back">foot</div>
+        </div>
+    </div>
+
+<script>
+  // Alle Karten auswählen
+  const cards = document.querySelectorAll('.card');
+
+  // Sicherstellen, dass beim Laden alle Karten vorne sind
+  window.addEventListener('load', () => {
+    cards.forEach(card => {
+      card.classList.remove('flipped');
+    });
+  });
+
+  // Klick zum Umdrehen
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
+  });
+</script>
+</body>
+</html>
